@@ -4,7 +4,9 @@ import java.util.Scanner;
 public class TemperatureConvertor {
 
     public static void main(String[] args) {
-
+/*
+        Am adaugat textul acesta pentru review
+ */
         Scanner reader = new Scanner(System.in);
         System.out.println("What conversion output do you choose? 'C' for Celsius and 'F' for Fahrenheit ");
         String convertTo = reader.nextLine();
