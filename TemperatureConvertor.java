@@ -12,6 +12,7 @@ public class TemperatureConvertor {
         String convertTo = reader.nextLine();
         System.out.println("Enter the temperature: ");
         int newTemp = reader.nextInt();
+        reader.close();
 
         if (Objects.equals(convertTo, "C")) {
             int outPutC = (newTemp - 32) * 5/9;
