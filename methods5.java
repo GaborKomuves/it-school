@@ -6,8 +6,15 @@ public class methods5 {
 //        printFibonacci();
 //        guessNumber();
 //        choseMenu();
-        breakStatement();
+//        breakStatement();
+        SumGreaterThanFive();
+
+
+
+
     }
+
+
 
 
 
@@ -125,6 +132,34 @@ public class methods5 {
             System.out.println("No numbers were entered.");
         }
     }
+
+    public static void SumGreaterThanFive(){
+          /*
+        12. Continue Statement
+        Create a program that asks the user for 10 numbers. Print the sum of all numbers that are greater than 5.
+        If the user enters a number less than or equal to 5, use the continue statement to skip the addition for that number.
+         */
+
+        Scanner reader = new Scanner(System.in);
+        int sum = 0;
+
+        System.out.println("Please enter 10 numbers:");
+
+        for (int i = 0; i < 10; i++) {
+            System.out.print("Enter number " + (i + 1) + ": ");
+            int number = reader.nextInt();
+
+            if (number <= 5) {
+                continue;
+            }
+
+            sum += number;
+        }
+
+        System.out.println("The sum of all numbers greater than 5 is: " + sum);
+    }
+
+
 
 
 }
