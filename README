@@ -1,0 +1,44 @@
+6. Exploring Different Types of Inheritance with the "Vehicles" Domain Model
+For this exercise, we'll dive into the world of vehicles. Your task is to design three separate packages in Java to
+demonstrate the three types of inheritance: Single, Multilevel, and Hierarchical.
+Package 1: Single Inheritance
+Domain Model: Bicycles
+Classes:
+● Bicycle
+● MountainBike (inherits from Bicycle)
+Attributes:
+● Bicycle: speed, gear
+● MountainBike: tireType, suspension
+Methods:
+● Bicycle: changeGear(), speedUp(), applyBrake()
+● MountainBike: adjustSuspension()Challenge
+Package 2: Multilevel Inheritance
+Domain Model: Cars
+Classes:
+● Car
+● ElectricCar (inherits from Car)
+● Tesla (inherits from ElectricCar)
+Attributes:
+● Car: make, model, year
+● ElectricCar: batteryCapacity, range
+● Tesla: autopilotVersion
+Methods:
+● Car: start(), stop(), accelerate()
+● ElectricCar: charge()
+● Tesla: enableAutopilot()Challenge
+Package 3: Hierarchical Inheritance
+Domain Model: Watercraft
+Classes:
+● Boat
+● SpeedBoat (inherits from Boat)
+● FishingBoat (inherits from Boat)
+Attributes:
+● Boat: length, weight
+● SpeedBoat: maxSpeed, engineType
+● FishingBoat: fishCapacity, typeOfNet
+Methods:
+● Boat: sail()
+● SpeedBoat: turboBoost()
+● FishingBoat: castNet()
+Note: While the aforementioned attributes and methods are suggestions, feel free to be creative and add any other attributes or methods you
+deem relevant
